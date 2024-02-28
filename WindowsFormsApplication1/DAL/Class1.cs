@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Class1
+    public class dalPersona
     {
+        public void insertarPersona(dalPersona pPersona)
+        {
+            using (var bd= new examenRecuEntities())
+            {
+                bd.dalPersona.add(pPersona);
+            }
+        }
     }
 }
